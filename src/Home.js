@@ -22,8 +22,19 @@ function Home() {
           red text away when "Ready!" is in the textbox.
         </b>
         <p>Are you ready to be a pokemon master?</p>
-        <input type="text" name="name" />
-        <span style={{ color: "red" }}>I am not ready yet!</span>
+        <input
+          type="text"
+          name="name"
+          onChange={(e) => {
+            if (e.target.value == "Ready!") {
+              setText(e.target.value);
+              setIsReady(true);
+            }
+          }}
+        />
+        <span style={{ color: "red" }} hidden={isReady}>
+          I am not ready yet!
+        </span>
       </header>
     </div>
   );
