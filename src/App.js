@@ -1,4 +1,5 @@
 import "./App.css";
+import "antd/dist/antd.css";
 import Home from "./Home";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import PokeDex from "./PokeDex";
@@ -7,10 +8,9 @@ function App() {
   return (
     <HashRouter>
       <div>
-        <Route exact path="/" component={Home}/>
-        <Route path="/pokedex" component={PokeDex}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/pokedex" component={PokeDex} />
       </div>
-      
     </HashRouter>
   );
 }

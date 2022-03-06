@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+.search {
+  width: 30%;
+}
+
+.PokeName {
+  color: white;
+}
+
+.PokeName:hover {
+  color: #ffff00;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
