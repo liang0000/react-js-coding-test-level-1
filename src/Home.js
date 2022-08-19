@@ -26,9 +26,11 @@ function Home() {
           type="text"
           name="name"
           onChange={(e) => {
-            if (e.target.value == "Ready!") {
+            if (e.target.value === "Ready!") {
               setText(e.target.value);
               setIsReady(true);
+            } else {
+              setIsReady(false);
             }
           }}
         />
